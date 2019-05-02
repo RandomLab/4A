@@ -1,3 +1,9 @@
 ﻿super
 C’est vraiment super
+<<<<<<< HEAD
 vraiment super super
+=======
+ c'est zuper
+>>>>>>> d96b0534de00445c50c6c74c65bb641d46b2879f
+
+super super super
