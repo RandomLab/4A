@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="hover.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <a-scene>
+                <a-assets><img id="mep" src="mep.png"> </a-assets>
+                <a-assets><img id="sol" src="sol.jpeg"> </a-assets>
+                <a-box src="#mep" position="0 2 -5" rotation="0 45 45" scale="2 2 2"
+                animation="property : object3D.position.y; to: 2.2; dir: alternate; dur:2000; loop:true"
+                scale-on-mouseenter></a-box>
+                <a-plane src="#sol" rotation="-90 0 0" width="90" height="150" repeat="70 70"></a-plane>
+                <a-sky color="blue"></a-sky>
+                <a-light type="ambient" color="purple"></a-light>
+                <a-light type="point" position="0 3 -5" color="red"></a-light>
+                <a-camera>
+                    <a-cursor></a-cursor>
+                </a-camera>
+                <!-- <a-entity environment="preset: forest; dressingAmount: 5000"></a-entity> -->
+        </a-scene>
+</body>
+</html>
